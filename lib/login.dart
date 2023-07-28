@@ -5,12 +5,12 @@ class login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String text = "Sajid";
+    
     return Scaffold(
       appBar: AppBar(title: Text("Login Page")),
       body: Center(
         child: Container(
-          child: Text("Hello ${text}"),
+          child: Text("Login Page"),
         ),
       ),
       drawer: Drawer(),

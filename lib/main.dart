@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Home.dart';
 import 'login.dart';
 
 void main() {
@@ -10,8 +11,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: login(),
+    return MaterialApp(    
+      theme: ThemeData(
+        // brightness:Brightness.light
+        primarySwatch: Colors.amber
+      ),
+      routes:{
+        "/":(context) => Home(),
+        "/login":(context) => login()
+      } ,
     );
   }
 }

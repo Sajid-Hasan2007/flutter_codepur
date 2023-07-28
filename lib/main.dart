@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Home.dart';
 import 'login.dart';
+import 'utils/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
           // brightness:Brightness.light
           primarySwatch: Colors.amber),
       initialRoute: "/login",
-      routes: {"/": (context) => Home(), "/login": (context) => login()},
+      routes: {
+        MyRoutes.HomeRoute: (context) => Home(),
+        MyRoutes.LoginRoute: (context) => login(),
+      },
     );
   }
 }
